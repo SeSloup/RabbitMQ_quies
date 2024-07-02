@@ -62,16 +62,16 @@ $ rabbitmqadmin get queue='hello'
 
 *Приложите скриншот результата работы второго скрипта.*
 
-`1`
+`1 cluster_status`
 ![1](https://github.com/SeSloup/RabbitMQ_quies/blob/main/screenshots/03.png)
 
-`2`
+`2 get queue=`
 ![2](https://github.com/SeSloup/RabbitMQ_quies/blob/main/screenshots/03(1).png)
 
-`3`
+`3 отключить одну ноду, отправить запрос на другую`
 - отключение ноды '''docker exec -it rabbitmq-rabbitmq3-1 rabbitmqctl stop_app'''
 - открыть порт на требуемой ноде например *PORT*
-- изменить хост на нужный ( в нашем случае localhost) и порт *PORT*
+- изменить в consumer.py хост на нужный ( в нашем случае localhost) и порт *PORT*
 
 
 ## Дополнительные задания (со звёздочкой*)
